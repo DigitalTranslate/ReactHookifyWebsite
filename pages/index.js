@@ -1,6 +1,11 @@
-import Head from 'next/head'
+/* eslint-disable react/react-in-jsx-scope */
+import Layout from '../components/Layout'
 
 // THIS IS OUR HOMEPAGE AND IS SERVED UP AT '/'
 export default function Home() {
-  return <div>hello</div>
+  return (
+    <Layout>
+      <div>hello</div>
+    </Layout>
+  )
 }
