@@ -1,22 +1,22 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `import React, { Component } from 'react';
 export default class Test extends Component {
   render() {
     return <div>TEST</div>;
   }
-}`;
+}`
 
 const results = `import React from "react"
 export default function Test() {
   return <div>TEST</div>
-}`;
+}`
 
 export default function Translations() {
   return (
     <div id="translations">
-      <h2>How Hookify Works</h2>
+      <h2>How React-Hookify Works</h2>
       <hr />
       <div id="translation_class">
         <p>
@@ -132,5 +132,5 @@ export default function Translations() {
         <hr />
       </div>
     </div>
-  );
+  )
 }

@@ -1,9 +1,10 @@
-import Layout from '../components/Layout';
-import About from '../components/Documentation/About.js';
-import Installation from '../components/Documentation/Installation.js';
-import Translations from '../components/Documentation/Translations.js';
-import Head from 'next/head';
-import Container from '@material-ui/core/Container';
+import Layout from '../components/Layout'
+import About from '../components/Documentation/About.js'
+import Installation from '../components/Documentation/Installation.js'
+import Usage from '../components/Documentation/Usage.js'
+import Translations from '../components/Documentation/Translations.js'
+import Head from 'next/head'
+import Container from '@material-ui/core/Container'
 
 export default function Docs() {
   return (
@@ -20,8 +21,9 @@ export default function Docs() {
         </div>
         <About />
         <Installation />
+        <Usage />
         <Translations />
       </Container>
     </Layout>
-  );
+  )
 }

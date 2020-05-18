@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
 }
 
 * {
@@ -39,6 +40,7 @@ img {
   margin-right: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  line-height: 1.2;
 }
 
 .container-1 {
@@ -86,12 +88,15 @@ img {
   margin-left: 0.5em;
 }
 
-/* #button-refactor {
-  text-transform: none;
-  height: 20px;
-  width: 20px;
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.grey {
+  background-color: rgb(226, 226, 226);
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+#usage_example {
+  margin-top: 30px;
+}
