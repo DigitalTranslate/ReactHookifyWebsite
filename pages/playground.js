@@ -3,6 +3,7 @@ import { Controlled as CodeMirror } from 'react-codemirror2'
 // import prettier from 'prettier-standalone'
 import Button from '@material-ui/core/Button'
 import Layout from '../components/Layout'
+import copy from 'copy-to-clipboard'
 import { testClass, hookifyApp } from '../componentUtils'
 
 let modeLoaded = false
@@ -17,9 +18,13 @@ export default function Playground() {
 
   function handleSubmit() {
     setOutputCode(inputCode)
-    // setOutputCode(prettierTest(inputCode))
     setOutputCode(hookifyApp(inputCode))
   }
+
+  function handleClear() {
+    setInputCode('')
+  }
+
   let options = {
     lineNumbers: true,
     theme: 'material',
@@ -38,9 +43,10 @@ export default function Playground() {
     options.mode = 'jsx'
     options2.mode = 'jsx'
   }
+
   return (
-    <Layout>
-      {modeLoaded && (
+    modeLoaded && (
+      <Layout>
         <div className="container-0">
           <div className="container-1">
             <div className="container-1a">
@@ -55,42 +61,53 @@ export default function Playground() {
                   setInputCode(value)
                 }}
               />
-              <div className="button-container">
+              <div className="button-container-1">
+                <div className="button-container-1a">
+                  <Button
+                    variant="contained"
+                    color="default"
+                    size="small"
+                    onClick={() => copy(inputCode)}
+                  >
+                    Copy
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="default"
+                    size="small"
+                    id="button-clear"
+                    onClick={handleClear}
+                  >
+                    Clear
+                  </Button>
+                </div>
                 <Button
                   variant="contained"
-                  color="default"
-                  className="playground-button"
+                  color="primary"
+                  size="small"
+                  onClick={handleSubmit}
                 >
-                  copy
-                </Button>
-                <Button
-                  variant="contained"
-                  color="default"
-                  className="playground-button"
-                >
-                  clear
+                  Submit
                 </Button>
               </div>
             </div>
             <div className="container-1b">
               <p className="playground-header">Hookfied Functional Component</p>
               <CodeMirror value={outputCode} options={options2} />
-              <div className="button-container">
+              <div className="button-container-2">
                 <Button
                   variant="contained"
                   color="default"
-                  className="playground-button"
+                  size="small"
+                  onClick={() => copy(inputCode)}
                 >
-                  copy
+                  Copy
                 </Button>
               </div>
             </div>
           </div>
-          <Button variant="contained" color="primary" onClick={handleSubmit}>
-            Submit
-          </Button>
         </div>
-      )}
-    </Layout>
+      </Layout>
+    )
   )
 }
