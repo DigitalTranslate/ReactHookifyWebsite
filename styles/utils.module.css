@@ -11,3 +11,7 @@ import utilStyles from '../styles/utils.module.css'
   display: flex;
   flex-direction: row;
 }
+
+.whitebutton {
+  color: white;
+}
