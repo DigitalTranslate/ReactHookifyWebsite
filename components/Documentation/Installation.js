@@ -5,15 +5,12 @@ export default function Installation() {
   return (
     <div id="installation">
       <h2>Installation</h2>
+      <p>
+        Install with <code>npm</code>:
+      </p>
       <div id="install_example">
         <Container maxWidth="sm">
-          <p>
-            Mauris eget ultrices enim. Vivamus aliquet venenatis quam, in
-            bibendum nulla pretium vitae. Nunc ultricies nisi sit amet augue
-            tempus, ut vehicula felis condimentum. Vivamus cursus augue sed
-            nulla hendrerit varius. Integer arcu ante, laoreet et dictum et,
-            ultrices nec justo. Morbi nec mauris est.
-          </p>
+          <code>npm install -g react-hookify</code>
         </Container>
       </div>
     </div>
