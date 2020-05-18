@@ -18,6 +18,7 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 }
 
 export default function Playground() {
+
   const [inputCode, setInputCode] = useState(testClass)
   const [outputCode, setOutputCode] = useState('')
 
