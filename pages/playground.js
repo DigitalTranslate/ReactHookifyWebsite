@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Controlled as CodeMirror } from 'react-codemirror2'
-// import prettier from 'prettier-standalone'
+import { JSHINT } from 'jshint'
 import Button from '@material-ui/core/Button'
 import Layout from '../components/Layout'
 import copy from 'copy-to-clipboard'
@@ -9,6 +9,11 @@ import { testClass, hookifyApp } from '../componentUtils'
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   require('codemirror/mode/jsx/jsx')
+  require('codemirror/addon/edit/matchbrackets')
+  require('codemirror/addon/edit/closebrackets')
+  require('codemirror/addon/lint/lint')
+  require('codemirror/addon/lint/javascript-lint')
+  window.JSHINT = JSHINT
   modeLoaded = true
 }
 
@@ -28,20 +33,22 @@ export default function Playground() {
   let options = {
     lineNumbers: true,
     theme: 'material',
-    // mode: 'jsx',
     smartIndent: true,
     readOnly: false,
   }
   let options2 = {
     lineNumbers: true,
     theme: 'material',
-    // mode: 'jsx',
     smartIndent: true,
     readOnly: true,
   }
   if (modeLoaded) {
     options.mode = 'jsx'
     options2.mode = 'jsx'
+    options.matchBrackets = true
+    options.autoCloseBrackets = true
+    // options.gutters = ['CodeMirror-lint-markers']
+    // options.lint = true
   }
 
   return (
