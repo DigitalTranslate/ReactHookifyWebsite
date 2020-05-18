@@ -1,3 +1,3 @@
 export default function Playground() {
-  return <div>PLAYGROUND HERE</div>
+  return <div>PLAYGROUND HERE</div>;
 }
