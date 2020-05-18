@@ -1,3 +1,10 @@
+/* eslint-disable react/react-in-jsx-scope */
+import Layout from '../components/Layout'
+
 export default function Playground() {
-  return <div>PLAYGROUND HERE</div>
+  return (
+    <Layout>
+      <div>PLAYGROUND HERE</div>
+    </Layout>
+  )
 }

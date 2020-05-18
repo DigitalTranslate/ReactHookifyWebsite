@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav>
       <div className="nav-left">
         <Link href="/">
-          <a>Home</a>
+          <a>React Hookify</a>
         </Link>
       </div>
       <div className="nav-right">
@@ -22,7 +22,7 @@ export default function Navbar() {
           nav {
             display: flex;
             flex-direction: row;
-            background-color: #ededed;
+            background-color: #080808;
             height: 50px;
             align-items: center;
             justify-content: space-between;

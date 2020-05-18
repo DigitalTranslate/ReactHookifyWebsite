@@ -7,7 +7,7 @@ export default function Footer() {
         {`
           footer {
             display: flex;
-            background-color: #ededed;
+            background-color: #90a9b7;
             padding-bottom: 3em;
             padding-top: 3em;
             position: relative;
