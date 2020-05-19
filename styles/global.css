@@ -4,12 +4,15 @@ ADD ANY CSS THAT WILL BE USED ON EVERY PAGE HERE
 
 */
 
-html,
+html {
+  min-height: 100vh;
+}
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
 }
 
 * {
@@ -17,17 +20,35 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #00d9ff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #90a9b7;
+}
+
+h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.MuiButton-root {
+  color: inherit !important;
+}
+
+.MuiSnackbar-root {
+  z-index: 10002 !important;
+}
+
+.button-row .MuiButton-root {
+  margin-right: 4px !important;
 }
 
 /* playground */
@@ -39,6 +60,7 @@ img {
   margin-right: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  line-height: 1.2;
 }
 
 .container-1 {
@@ -86,6 +108,7 @@ img {
   margin-left: 0.5em;
 }
 
+<
 #translation_code_examples {
   display: flex;
 }
@@ -110,12 +133,16 @@ img {
   font-size: medium;
 }
 
-/* #button-refactor {
-  text-transform: none;
-  height: 20px;
-  width: 20px;
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.grey {
+  background-color: rgb(226, 226, 226);
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+#usage_example {
+  margin-top: 30px;
+}
+
