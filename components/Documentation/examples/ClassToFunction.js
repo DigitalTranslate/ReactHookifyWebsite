@@ -5,6 +5,7 @@ import prettier from 'prettier-standalone'
 
 const input = prettier.format(
   `import React, { Component } from 'react';
+
   class App extends Component {
     render() {
       return <div>Hello</div>;
@@ -18,6 +19,7 @@ const input = prettier.format(
 
 const results = prettier.format(
   `import React from "react"
+
     function App() {
   return <div>Hello</div>
 }`,
