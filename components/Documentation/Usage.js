@@ -6,7 +6,7 @@ export default function Installation() {
     <div id="installation">
       <h2>Usage</h2>
       <p>
-        React-Hookify is a CLI tool. It will not alter your current file,
+        React-Hookify is a CLI tool. <b>It will not alter your current file</b>;
         instead a new 'hookified' file will be created next to the file you run
         it on.
       </p>

@@ -108,7 +108,6 @@ img {
   margin-left: 0.5em;
 }
 
-<
 #translation_code_examples {
   display: flex;
 }
@@ -146,3 +145,6 @@ img {
   margin-top: 30px;
 }
 
+/* .MuiContainer-root {
+  margin-left: 19.3em !important;
+} */

@@ -16,7 +16,7 @@ export default function Docs() {
           href="https://highlightjs.org/static/demo/styles/atom-one-dark.css"
         />
       </Head>
-      <TableOfContents />
+      {/* <TableOfContents /> */}
       <Container>
         <div id="doc_title">
           <h1>Documentation</h1>
