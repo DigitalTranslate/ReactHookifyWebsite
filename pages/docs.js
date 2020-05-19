@@ -13,7 +13,7 @@ export default function Docs() {
       <Head>
         <link
           rel="stylesheet"
-          href="https://highlightjs.org/static/demo/styles/railscasts.css"
+          href="https://highlightjs.org/static/demo/styles/atom-one-dark.css"
         />
       </Head>
       <TableOfContents />

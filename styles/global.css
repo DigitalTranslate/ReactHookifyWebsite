@@ -108,6 +108,31 @@ img {
   margin-left: 0.5em;
 }
 
+<
+#translation_code_examples {
+  display: flex;
+}
+
+#documentation_links {
+  padding: 1px;
+  padding-left: 5px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+#documentation_links a {
+  font-size: small;
+}
+
+#install_example {
+  font-family: 'Consolas', 'Monaco', 'monospace';
+  padding: 1px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+#installation code {
+  font-size: medium;
+}
+
 .grey {
   background-color: rgb(226, 226, 226);
   padding: 1em;
@@ -120,3 +145,4 @@ img {
 #usage_example {
   margin-top: 30px;
 }
+
