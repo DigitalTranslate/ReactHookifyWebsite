@@ -29,8 +29,8 @@ export default function Navbar() {
             height: 50px;
             align-items: center;
             justify-content: space-between;
-            padding-left: 20em;
-            padding-right: 20em;
+            padding-left: 10em;
+            padding-right: 10em;
           }
           .nav-right a {
             margin-left: 23px;

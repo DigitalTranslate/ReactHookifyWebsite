@@ -94,7 +94,7 @@ export default function Home() {
           .about-container {
             display: flex;
             justify-content: center;
-            background-color: #1c2632;
+            background-color: #333c47;
             color: white;
             padding-top: 2em;
             padding-bottom: 2em;
@@ -110,12 +110,12 @@ export default function Home() {
             padding: 1.1em;
           }
           .motivation {
-            background-color: #4a525a;
+            background-color: #324a5f;
             padding-top: 1em;
             padding-bottom: 1em;
           }
           .motivation-text {
-            background-color: #4a525a;
+            background-color: #324a5f;
             font-family: 'Apple SD Gothic Neo', AppleSDGothicNeo, -apple-system,
               BlinkMacSystemFont, Helvetica, Arial, sans-serif;
             font-weight: normal;
