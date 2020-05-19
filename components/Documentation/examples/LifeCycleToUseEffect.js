@@ -1,37 +1,23 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `import React, { Component } from 'react';
 export default class Test extends Component {
   render() {
     return <div>TEST</div>;
   }
-}`;
+}`
 
 const results = `import React from "react"
 export default function Test() {
   return <div>TEST</div>
-}`;
+}`
 
 export default function LifeCycleToUseEffect() {
   return (
     <div id="translation_lifecycle">
       <div>
         <h4>Lifecycle to useEffect</h4>
-        <div id="documentation_links">
-          <h5>Articles and Documentation</h5>
-          <ul>
-            <li>
-              <a
-                href="https://reactjs.org/docs/hooks-effect.html"
-                target="_blank"
-              >
-                React Documentation On useEffect
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et
           tincidunt purus. Curabitur tincidunt enim nec nisi accumsan
@@ -130,7 +116,19 @@ export default function LifeCycleToUseEffect() {
   }, [counter])`}
         </Highlight>
       </Container>
-      <hr />
+      <div id="documentation_links">
+        <h5 id="read-more">Read More:</h5>
+        <ul id="bullets">
+          <li>
+            <a
+              href="https://reactjs.org/docs/hooks-effect.html"
+              target="_blank"
+            >
+              React Documentation On useEffect
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  );
+  )
 }

@@ -13,9 +13,9 @@ export default function About() {
           <b>It will not alter your current code</b>; instead a new 'hookified'
           file is created. This tool provides a convenient way to update
           outdated code, or to help learn how Hooks work. Feel free to try it
-          out in our{' '}
+          out with our{' '}
           <Link href="/playground">
-            <a>playground</a>
+            <a>Demo</a>
           </Link>
           !
         </p>

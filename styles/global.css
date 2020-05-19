@@ -113,21 +113,29 @@ img {
 }
 
 #documentation_links {
-  padding: 1px;
-  padding-left: 5px;
-  background-color: whitesmoke;
-  border-radius: 25px;
+  padding-top: 1em;
+  padding-left: 1em;
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
+
+#read-more {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#bullets {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 1em;
+}
+
 #documentation_links a {
   font-size: small;
 }
 
-#install_example {
-  font-family: 'Consolas', 'Monaco', 'monospace';
-  padding: 1px;
-  background-color: whitesmoke;
-  border-radius: 25px;
-}
 #installation code {
   font-size: medium;
 }

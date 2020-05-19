@@ -22,7 +22,7 @@ export default function Playground() {
   const [outputCode, setOutputCode] = useState('')
   const [SnackOpen, setOpen] = useState(false)
   const [error, setError] = useState(
-    '// Please enter valid a react class component!'
+    '// Please enter valid a React class component!'
   )
 
   function reactClassCompTest(string) {
