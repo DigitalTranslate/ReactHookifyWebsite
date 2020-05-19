@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Highlight from 'react-highlight.js'
 import Container from '@material-ui/core/Container'
 
@@ -16,7 +17,7 @@ export default function Test() {
 export default function Translations() {
   return (
     <div id="translations">
-      <h2>How React-Hookify Works</h2>
+      <h2>How React Hookify Works</h2>
       <hr />
       <div id="translation_class">
         <p>

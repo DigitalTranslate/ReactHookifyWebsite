@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Button from '@material-ui/core/Button'
+import Link from 'next/link'
 
 // THIS IS OUR HOMEPAGE AND IS SERVED UP AT '/'
 export default function Home() {
@@ -9,12 +10,16 @@ export default function Home() {
         <div className="home-buttons-container">
           <img src="reacthooks.png" alt="logo" />
           <div className="button-row">
-            <Button href="/playground" variant="contained" color="default">
-              Try it out
-            </Button>
-            <Button href="/docs" variant="contained" color="default">
-              Get Started
-            </Button>
+            <Link href="/playground">
+              <Button variant="contained" color="default">
+                Try it out
+              </Button>
+            </Link>
+            <Link href="/docs">
+              <Button variant="contained" color="default">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,9 +47,11 @@ export default function Home() {
           <span>Install React Hookify's source files globally via npm.</span>
           <div className="code-block">$ npm install -g react-hookify</div>
           <hr />
-          <Button href="/docs" variant="text" color="default">
-            Read Docs
-          </Button>
+          <Link href="/docs">
+            <Button variant="text" color="default">
+              Read Docs
+            </Button>
+          </Link>
         </div>
         <div className="about-details">
           <h1>Usage</h1>
@@ -56,9 +63,9 @@ export default function Home() {
             $ hookify {'<filepath of class component>'}
           </div>
           <hr />
-          <Button href="/playground" variant="text">
-            Try Demo
-          </Button>
+          <Link href="/playground">
+            <Button variant="text">Try Demo</Button>
+          </Link>
         </div>
       </div>
       <style jsx>
@@ -100,6 +107,11 @@ export default function Home() {
             margin-top: 2em;
             margin-bottom: 2em;
             padding: 1.1em;
+          }
+          .about-details h1 {
+            font-family: 'Apple SD Gothic Neo', AppleSDGothicNeo, -apple-system,
+              BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+            font-weight: lighter;
           }
           .motivation {
             background-color: #324a5f;

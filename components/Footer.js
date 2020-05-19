@@ -47,6 +47,7 @@ export default function Footer() {
             bottom: 0;
             width: 100%;
             height: 12rem;
+            z-index: 10000;
           }
           .footer-container {
             display: flex;
@@ -62,6 +63,11 @@ export default function Footer() {
           .footer-section a {
             padding-top: 5px;
             color: black;
+            transition: color 0.3s ease;
+          }
+          .footer-section a:hover {
+            color: #324A5F;
+          }
           }
           footer img {
             width: 80px;

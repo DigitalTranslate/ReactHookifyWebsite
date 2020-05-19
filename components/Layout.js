@@ -24,6 +24,7 @@ export default function Layout({ children }) {
             padding-bottom: 12rem;
           }
           #content-wrap {
+            margin-top: 50px;
           }
         `}
       </style>

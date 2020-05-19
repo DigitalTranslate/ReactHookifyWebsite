@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #00d9ff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -43,9 +43,14 @@ img {
   color: inherit !important;
 }
 
+.MuiSnackbar-root {
+  z-index: 10002 !important;
+}
+
 .button-row .MuiButton-root {
   margin-right: 4px !important;
 }
+
 /* playground */
 .container-0 {
   display: flex;

@@ -5,6 +5,7 @@ import Usage from '../components/Documentation/Usage.js'
 import Translations from '../components/Documentation/Translations.js'
 import Head from 'next/head'
 import Container from '@material-ui/core/Container'
+import TableOfContents from '../components/Documentation/TableOfContents'
 
 export default function Docs() {
   return (
@@ -15,6 +16,7 @@ export default function Docs() {
           href="https://highlightjs.org/static/demo/styles/railscasts.css"
         />
       </Head>
+      <TableOfContents />
       <Container>
         <div id="doc_title">
           <h1>Documentation</h1>

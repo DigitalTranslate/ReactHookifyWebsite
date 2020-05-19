@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Link from 'next/link'
+import GitHubIcon from '@material-ui/icons/GitHub'
 
 export default function Navbar() {
   return (
@@ -19,10 +20,17 @@ export default function Navbar() {
         <Link href="/docs">
           <a>Documentation</a>
         </Link>
+        <a href="https://github.com/DigitalTranslate/ReactHookify">
+          <GitHubIcon fontSize="large" />
+        </a>
       </div>
       <style jsx>
         {`
           nav {
+            position: fixed;
+            top: 0;
+            z-index: 10000;
+            width: 100%;
             display: flex;
             flex-direction: row;
             background-color: #080808;
@@ -32,18 +40,33 @@ export default function Navbar() {
             padding-left: 10em;
             padding-right: 10em;
           }
+          .nav-right {
+            display: flex;
+            color: white;
+            align-items: center;
+          }
           .nav-right a {
             margin-left: 23px;
+            color: white;
+            transition: color 0.3s ease;
+          }
+
+          .nav-right a:hover {
+            color: #90a9b7;
+          }
           }
           .nav-left a {
             transition: margin-left 0.8s ease, color 0.3s ease;
+            color: white;
           }
           .nav-left img {
             max-height: 2.4em;
-            transition: margin-left 0.8s ease;
+            transition: margin-left 0.8s ease color 0.3s ease;
           }
           .nav-left a:hover {
             margin-left: 20px;
+            color: #90a9b7;
+
           }
           #home-button {
             display: flex;
