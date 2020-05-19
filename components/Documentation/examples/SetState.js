@@ -8,7 +8,7 @@ const input = `onClick={() => {
     })
     }}`;
 
-const results = `nClick={() => {
+const results = `onClick={() => {
     setFirstName("Tom")
     setLastName("Hanks")
     }}`;
