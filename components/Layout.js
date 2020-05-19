@@ -9,6 +9,10 @@ export default function Layout({ children }) {
       <Head>
         <title>React Hookify</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1"
+        />
       </Head>
       <div id="content-wrap">
         <Navbar />
@@ -21,6 +25,7 @@ export default function Layout({ children }) {
           #page-container {
             position: relative;
             min-height: 100vh;
+            width: 100%;
             padding-bottom: 12rem;
           }
           #content-wrap {

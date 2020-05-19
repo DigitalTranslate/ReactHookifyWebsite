@@ -9,7 +9,7 @@ export default function Navbar() {
         <Link href="/">
           <a id="home-button">
             <img src="reacthooks.png" alt="home button" />
-            <div>React Hookify</div>
+            <div id="logo-title">React Hookify</div>
           </a>
         </Link>
       </div>
@@ -60,7 +60,9 @@ export default function Navbar() {
             color: white;
           }
           .nav-left img {
+            min-height: 2.4em;
             max-height: 2.4em;
+            min-width: 59.9px;
             transition: margin-left 0.8s ease color 0.3s ease;
           }
           .nav-left a:hover {
