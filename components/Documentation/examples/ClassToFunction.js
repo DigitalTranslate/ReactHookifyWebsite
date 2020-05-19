@@ -32,7 +32,7 @@ export default function ClassToFunction() {
     <div>
       <h4>Class Component to Functional Component</h4>
       <p>
-        React-Hookify is able to take a class component, and construct it in the
+        React Hookify is able to take a class component, and construct it in the
         form of a functional component. In this simple example, note the changes
         to the import statement, class declaration, and render method.
       </p>

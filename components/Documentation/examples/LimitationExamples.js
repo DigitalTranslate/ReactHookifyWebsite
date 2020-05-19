@@ -11,8 +11,10 @@ export default function LimitationExamples() {
       <ul>
         <li>
           Lifecycle methods do not always map 1 to 1 with React Hooks. Sometimes
-          it is necessary to rewrite code. Please see the lifecycle section
-          above for more information.
+          it is necessary to rewrite code. Currently, the only supported
+          lifecycle methods are componentDidMount, componentDidUpdate, and
+          componentWillUnmount. Please see the lifecycle section above for more
+          information.
         </li>
         <li>
           Any comments in a class component file will be removed in the new

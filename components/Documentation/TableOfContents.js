@@ -20,7 +20,10 @@ export default function TableOfContents() {
           <a href="#installation">Installation</a>
         </li>
         <li>
-          <a href="#translations">How React Hookify Works</a>
+          <a href="#usage">Usage</a>
+        </li>
+        <li>
+          <a href="#translations">Examples</a>
           <ul>
             <li>
               <a href="#translation_class">Class to Function</a>
@@ -35,6 +38,9 @@ export default function TableOfContents() {
               <a href="#translation_lifecycle">Lifecycle to useEffect</a>
             </li>
           </ul>
+        </li>
+        <li>
+          <a href="#translation_limitations">Limitations</a>
         </li>
       </ul>
       <style jsx>
