@@ -1,20 +1,22 @@
-import Layout from '../components/Layout'
+/* eslint-disable react/react-in-jsx-scope */
 import About from '../components/Documentation/About.js'
 import Installation from '../components/Documentation/Installation.js'
 import Usage from '../components/Documentation/Usage.js'
 import Translations from '../components/Documentation/Translations.js'
 import Head from 'next/head'
 import Container from '@material-ui/core/Container'
+import TableOfContents from '../components/Documentation/TableOfContents'
 
 export default function Docs() {
   return (
-    <Layout>
+    <>
       <Head>
         <link
           rel="stylesheet"
           href="https://highlightjs.org/static/demo/styles/railscasts.css"
         />
       </Head>
+      <TableOfContents />
       <Container>
         <div id="doc_title">
           <h1>Documentation</h1>
@@ -24,6 +26,6 @@ export default function Docs() {
         <Usage />
         <Translations />
       </Container>
-    </Layout>
+    </>
   )
 }

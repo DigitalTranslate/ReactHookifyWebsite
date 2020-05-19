@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Controlled as CodeMirror } from 'react-codemirror2'
 import { JSHINT } from 'jshint'
 import Button from '@material-ui/core/Button'
-import Layout from '../components/Layout'
 import copy from 'copy-to-clipboard'
 import { testClass, hookifyApp } from '../componentUtils'
+import FlexSnackbar from '../components/flexSnackbar'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -20,6 +20,7 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 export default function Playground() {
   const [inputCode, setInputCode] = useState(testClass)
   const [outputCode, setOutputCode] = useState('')
+  const [SnackOpen, setOpen] = useState(false)
   const [error, setError] = useState(
     '// Please enter valid a react class component!'
   )
@@ -59,7 +60,7 @@ export default function Playground() {
 
   return (
     modeLoaded && (
-      <Layout>
+      <>
         <div className="container-0">
           <div className="container-1">
             <div className="container-1a">
@@ -80,7 +81,10 @@ export default function Playground() {
                     variant="contained"
                     color="default"
                     size="small"
-                    onClick={() => copy(inputCode)}
+                    onClick={() => {
+                      copy(inputCode)
+                      setOpen(true)
+                    }}
                   >
                     Copy
                   </Button>
@@ -120,7 +124,13 @@ export default function Playground() {
             </div>
           </div>
         </div>
-      </Layout>
+        <FlexSnackbar
+          setOpen={setOpen}
+          snackState={SnackOpen}
+          severity="success"
+          message="Copied to clipboard"
+        />
+      </>
     )
   )
 }
