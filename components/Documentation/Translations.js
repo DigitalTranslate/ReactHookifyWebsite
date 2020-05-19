@@ -1,5 +1,3 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
 import ClassToFunction from './examples/ClassToFunction';
 import StateToUseState from './examples/StateToUseState';
 import SetState from './examples/SetState';
@@ -28,5 +26,5 @@ export default function Translations() {
         <LifeCycleToUseEffect />
       </div>
     </div>
-  )
+  );
 }

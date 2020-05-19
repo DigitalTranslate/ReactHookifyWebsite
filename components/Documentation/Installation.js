@@ -1,5 +1,5 @@
-import Container from '@material-ui/core/Container'
-import React from 'react'
+import Container from '@material-ui/core/Container';
+import React from 'react';
 
 export default function Installation() {
   return (
@@ -17,5 +17,5 @@ export default function Installation() {
         </Container>
       </div>
     </div>
-  )
+  );
 }
