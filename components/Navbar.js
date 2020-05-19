@@ -6,7 +6,10 @@ export default function Navbar() {
     <nav>
       <div className="nav-left">
         <Link href="/">
-          <a>React Hookify</a>
+          <a id="home-button">
+            <img src="reacthooks.png" alt="home button" />
+            <div>React Hookify</div>
+          </a>
         </Link>
       </div>
       <div className="nav-right">
@@ -26,11 +29,25 @@ export default function Navbar() {
             height: 50px;
             align-items: center;
             justify-content: space-between;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20em;
+            padding-right: 20em;
           }
           .nav-right a {
-            margin-left: 10px;
+            margin-left: 23px;
+          }
+          .nav-left a {
+            transition: margin-left 0.8s ease, color 0.3s ease;
+          }
+          .nav-left img {
+            max-height: 2.4em;
+            transition: margin-left 0.8s ease;
+          }
+          .nav-left a:hover {
+            margin-left: 20px;
+          }
+          #home-button {
+            display: flex;
+            align-items: center;
           }
         `}
       </style>
