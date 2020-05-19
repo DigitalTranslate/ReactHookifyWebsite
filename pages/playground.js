@@ -25,11 +25,25 @@ export default function Playground() {
     '// Please enter valid a react class component!'
   )
 
+  function reactClassCompTest(string) {
+    let test1 = /(class)(.|\n)*?(extends)(.|\n)*?(Component)/.test(string)
+    let test2 = /([^a-zA-z0-9_])(render\()/.test(string)
+    if (test1 && test2) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   function handleSubmit() {
     try {
-      setOutputCode(hookifyApp(inputCode))
+      if (reactClassCompTest(inputCode)) {
+        setOutputCode(hookifyApp(inputCode))
+      } else {
+        setOutputCode(error)
+      }
     } catch (err) {
-      setOutputCode(error)
+      setOutputCode(err.message)
     }
   }
 
