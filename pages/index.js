@@ -9,20 +9,10 @@ export default function Home() {
         <div className="home-buttons-container">
           <img src="reacthooks.png" alt="logo" />
           <div className="button-row">
-            <Button
-              href="/playground"
-              variant="contained"
-              size="normal"
-              color="default"
-            >
+            <Button href="/playground" variant="contained" color="default">
               Try it out
             </Button>
-            <Button
-              href="/docs"
-              variant="contained"
-              size="normal"
-              color="default"
-            >
+            <Button href="/docs" variant="contained" color="default">
               Get Started
             </Button>
           </div>
@@ -139,8 +129,8 @@ export default function Home() {
             border-radius: 4px;
             background-color: #272c34;
             -webkit-overflow-scrolling: touch;
-            margin-top: 10px;
-            margin-bottom: 5px;
+            margin-top: 16px;
+            margin-bottom: 14px;
           }
         `}
       </style>

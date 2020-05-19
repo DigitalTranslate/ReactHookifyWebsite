@@ -10,8 +10,8 @@ export default function Installation() {
         <Container maxWidth="sm">
           <p>
             Install with npm: <br />
-            <div className="grey">npm install -g react-hookify</div>
           </p>
+          <div className="grey">npm install -g react-hookify</div>
         </Container>
       </div>
     </div>
