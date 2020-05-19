@@ -40,7 +40,7 @@ export default function TableOfContents() {
       <style jsx>
         {`
           #menu {
-            width: 300px;
+            width: 18em;
             padding-top: 60px;
           }
           #menu a {
