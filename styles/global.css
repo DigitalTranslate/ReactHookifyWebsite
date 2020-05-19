@@ -12,8 +12,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
 }
 
 * {
@@ -47,3 +45,68 @@ img {
 .button-row .MuiButton-root {
   margin-right: 4px !important;
 }
+/* playground */
+.container-0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.container-1a {
+  margin-right: 1em;
+  width: 48%;
+}
+
+.container-1b {
+  width: 48%;
+}
+
+.CodeMirror {
+  height: 460px !important;
+}
+
+.playground-header {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.button-container-2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+
+#button-clear {
+  margin-left: 0.5em;
+}
+
+/* #button-refactor {
+  text-transform: none;
+  height: 20px;
+  width: 20px;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

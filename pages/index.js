@@ -98,6 +98,8 @@ export default function Home() {
             color: white;
             padding-top: 2em;
             padding-bottom: 2em;
+            line-height: 1.6;
+            font-size: 18px;
           }
           .about-details {
             display: flex;
