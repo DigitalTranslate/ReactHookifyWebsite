@@ -1,5 +1,6 @@
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box'
+import Container from '@material-ui/core/Container'
+import React from 'react'
 
 export default function Installation() {
   return (
@@ -8,14 +9,11 @@ export default function Installation() {
       <div id="install_example">
         <Container maxWidth="sm">
           <p>
-            Mauris eget ultrices enim. Vivamus aliquet venenatis quam, in
-            bibendum nulla pretium vitae. Nunc ultricies nisi sit amet augue
-            tempus, ut vehicula felis condimentum. Vivamus cursus augue sed
-            nulla hendrerit varius. Integer arcu ante, laoreet et dictum et,
-            ultrices nec justo. Morbi nec mauris est.
+            Install with npm: <br />
+            <div className="grey">npm install -g react-hookify</div>
           </p>
         </Container>
       </div>
     </div>
-  );
+  )
 }

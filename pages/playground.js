@@ -19,10 +19,16 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 export default function Playground() {
   const [inputCode, setInputCode] = useState(testClass)
   const [outputCode, setOutputCode] = useState('')
+  const [error, setError] = useState(
+    '// Please enter valid a react class component!'
+  )
 
   function handleSubmit() {
-    setOutputCode(inputCode)
-    setOutputCode(hookifyApp(inputCode))
+    try {
+      setOutputCode(hookifyApp(inputCode))
+    } catch (err) {
+      setOutputCode(error)
+    }
   }
 
   function handleClear() {
