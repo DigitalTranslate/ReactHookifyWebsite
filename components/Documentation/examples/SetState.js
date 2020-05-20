@@ -1,17 +1,17 @@
-import Highlight from 'react-highlight.js'
-import Container from '@material-ui/core/Container'
+import Highlight from 'react-highlight.js';
+import Container from '@material-ui/core/Container';
 
 const input = `onClick={() => {
   this.setState({
     firstName: 'Tom',
     lastName: 'Hanks',
   })
-}}`
+}}`;
 
 const results = `onClick={() => {
   setFirstName("Tom")
   setLastName("Hanks")
-}}`
+}}`;
 
 export default function SetState() {
   return (
@@ -42,5 +42,5 @@ export default function SetState() {
       </div>
       <hr />
     </div>
-  )
+  );
 }
