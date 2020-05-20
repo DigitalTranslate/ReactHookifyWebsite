@@ -9,15 +9,36 @@ export default function LimitationExamples() {
         limitations include:
       </p>
       <ul>
-        <li>
+        <li className="li-limits">
           Any comments in a class component file will be removed in the new
           'hookified' file.
         </li>
-        <li>
+        <li className="li-limits">
           React Hookify does not currently support 'get', 'set', and 'static'
           keywords.
         </li>
-        <li>
+        <li className="li-limits">
+          React Hookify will not be able to translate instances where variable
+          names come from other files. The package is built with parsing logic
+          that looks for variable patterns. This may come up when replacing the
+          whole state with <span className="code-span">this.setState</span> and
+          when using <b>controlled forms</b>.
+          <ul>
+            <li className="li-limits">
+              If you try to replace the whole state using{' '}
+              <span className="code-span">
+                this.setState(this.props.newObject)
+              </span>
+              , React Hookify would not have access to the needed keys/values.
+            </li>
+            <li className="li-limits">
+              Similarly, if you try to implement a controlled form, but the
+              actual component form is in a different file, React Hookify again
+              would not be able to identify the needed form names and values.
+            </li>
+          </ul>
+        </li>
+        <li className="li-limits">
           Lifecycle methods do not always map 1 to 1 with React Hooks. The
           article below (written by a React developer) highlights many of the
           differences. Sometimes it is necessary to rewrite code. Currently, the
