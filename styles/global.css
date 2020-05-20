@@ -56,6 +56,7 @@ img {
   align-items: center;
   width: 70%;
   margin-left: 19.3em;
+  padding-top: 1.2em;
 }
 
 @media (min-width: 320px) {
@@ -171,6 +172,10 @@ img {
 }
 
 #installation code {
+  font-size: medium;
+}
+
+#usage code {
   font-size: medium;
 }
 

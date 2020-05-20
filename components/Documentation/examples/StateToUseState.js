@@ -5,6 +5,7 @@ import prettier from 'prettier-standalone'
 const input = prettier.format(
   `
   import React, { Component } from 'react'
+
   class App extends Component {
     constructor() {
       this.state = {
@@ -25,6 +26,7 @@ const input = prettier.format(
 const results = prettier.format(
   `
   import React from "react"
+
     function App() {
       const [firstName, setFirstName] = useState("Bob")
 const [lastName, setLastName] = useState("Smith")

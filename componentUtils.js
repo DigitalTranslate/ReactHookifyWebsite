@@ -1,8 +1,10 @@
 import prettier from 'prettier-standalone'
 import translateToFunctionComp from './lib/mainTranslator'
 
-export const testClass = `import React, { Component } from 'react'
-export default class TestFile1 extends Component {
+export const testClass = `// Try out our test component below, or write your own!
+import React, { Component } from 'react'
+
+export default class Test extends Component {
   constructor() {
     super()
     this.state = {

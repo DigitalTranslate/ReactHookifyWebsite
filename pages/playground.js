@@ -130,7 +130,10 @@ export default function Playground() {
                   variant="contained"
                   color="default"
                   size="small"
-                  onClick={() => copy(inputCode)}
+                  onClick={() => {
+                    copy(outputCode)
+                    setOpen(true)
+                  }}
                 >
                   Copy
                 </Button>
