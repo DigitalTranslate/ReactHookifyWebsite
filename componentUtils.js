@@ -32,14 +32,6 @@ export default class TestFile1 extends Component {
   }
 }`
 
-function prettierTest(string) {
-  let formattedTest = prettier.format(string, {
-    semi: false,
-    parser: 'babel',
-  })
-  return formattedTest
-}
-
 export function hookifyApp(testStr) {
   let formattedTest = prettier.format(testStr, {
     semi: false,
