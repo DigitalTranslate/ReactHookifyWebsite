@@ -1,17 +1,17 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `import React, { Component } from 'react';
 export default class Test extends Component {
   render() {
     return <div>TEST</div>;
   }
-}`;
+}`
 
 const results = `import React from "react"
 export default function Test() {
   return <div>TEST</div>
-}`;
+}`
 
 export default function ClassToFunction() {
   return (
@@ -35,11 +35,11 @@ export default function ClassToFunction() {
       <div id="translation_code_examples">
         <Container maxWidth="md">
           <h5>Input:</h5>
-          <Highlight language={'javascript'}> {input}</Highlight>
-          <h5>Output:</h5>
+          <Highlight language={'javascript'}>{input}</Highlight>
+          <h5 id="useState-ex-idx">Output:</h5>
           <Highlight language={'javascript'}> {results}</Highlight>
         </Container>
       </div>
     </div>
-  );
+  )
 }

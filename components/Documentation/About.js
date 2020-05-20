@@ -7,7 +7,7 @@ export default function About() {
       <h2>About</h2>
       <div id="about_hookify">
         <h4>What is React Hookify?</h4>
-        <p>
+        <p id="why-hooks">
           React-Hookify is a command line tool that converts React class
           components into functional components <em>with Hooks</em>! This tool
           provides a convenient way to update outdated code, or to help learn
@@ -42,7 +42,13 @@ export default function About() {
         </ul>
         While there are no plans to remove classes from React, hooks give React
         developers new tools to build their apps. Read more about hooks{' '}
-        <a href="https://reactjs.org/docs/hooks-intro.html">here</a>.
+        <a
+          id="installation-idx"
+          href="https://reactjs.org/docs/hooks-intro.html"
+        >
+          here
+        </a>
+        .
         <hr />
       </div>
     </div>

@@ -13,8 +13,9 @@ export default function Installation() {
           <p>
             Install with npm: <br />
           </p>
-          <div className="grey">npm install -g react-hookify</div>
-
+          <div id="usage-idx" className="grey">
+            npm install -g react-hookify
+          </div>
         </Container>
       </div>
     </div>

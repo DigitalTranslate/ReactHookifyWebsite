@@ -1,17 +1,17 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `onClick={() => {
     this.setState({
     firstName: 'Tom',
     lastName: 'Hanks',
     })
-    }}`;
+    }}`
 
 const results = `nClick={() => {
     setFirstName("Tom")
     setLastName("Hanks")
-    }}`;
+    }}`
 
 export default function SetState() {
   return (
@@ -34,12 +34,12 @@ export default function SetState() {
         <Highlight language={'javascript'}> {results}</Highlight>
       </Container>
 
-      <p>
+      <p id="useEffect-ex-idx">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et
         tincidunt purus. Curabitur tincidunt enim nec nisi accumsan ullamcorper.
         Maecenas at massa vel sapien feugiat eleifend in non massa.
       </p>
       <hr />
     </div>
-  );
+  )
 }

@@ -107,15 +107,17 @@ img {
 
 .container-1a {
   margin-right: 1em;
-  width: 48%;
+  width: 50%;
 }
 
 .container-1b {
-  width: 48%;
+  width: 50%;
 }
 
 .CodeMirror {
-  height: 460px !important;
+  /* height: 460px !important; */
+  height: 70vh !important;
+  font-size: 0.9vw;
 }
 
 .playground-header {

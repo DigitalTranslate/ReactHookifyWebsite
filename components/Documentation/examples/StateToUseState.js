@@ -1,5 +1,5 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `constructor() {
     super();
@@ -7,10 +7,10 @@ const input = `constructor() {
     firstName: 'Bob',
     lastName: 'Smith',
     };
-    }`;
+    }`
 
 const results = `const [firstName, setFirstName] = useState("Bob")
-const [lastName, setLastName] = useState("Smith")`;
+const [lastName, setLastName] = useState("Smith")`
 
 export default function StateToUseState() {
   return (
@@ -34,9 +34,9 @@ export default function StateToUseState() {
       <Container maxWidth="md">
         <h5>Input:</h5>
         <Highlight language={'javascript'}> {input}</Highlight>
-        <h5>Output:</h5>
+        <h5 id="setState-ex-idx">Output:</h5>
         <Highlight language={'javascript'}> {results}</Highlight>
       </Container>
     </div>
-  );
+  )
 }

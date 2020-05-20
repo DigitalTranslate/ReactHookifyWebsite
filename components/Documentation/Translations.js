@@ -1,11 +1,9 @@
-
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
-import ClassToFunction from './examples/ClassToFunction';
-import StateToUseState from './examples/StateToUseState';
-import SetState from './examples/SetState';
-import LifeCycleToUseEffect from './examples/LifeCycleToUseEffect';
-
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
+import ClassToFunction from './examples/ClassToFunction'
+import StateToUseState from './examples/StateToUseState'
+import SetState from './examples/SetState'
+import LifeCycleToUseEffect from './examples/LifeCycleToUseEffect'
 
 export default function Translations() {
   return (
@@ -13,7 +11,7 @@ export default function Translations() {
       <h2>How React Hookify Works</h2>
       <hr />
       <div id="translation_class">
-        <p>
+        <p id="class-to-func-idx">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et
           tincidunt purus. Curabitur tincidunt enim nec nisi accumsan
           ullamcorper. Maecenas at massa vel sapien feugiat eleifend in non
