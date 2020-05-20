@@ -32,15 +32,15 @@ export default function Home() {
               functional components with Hooks
             </li>
             <li>A quick way to refactor old code</li>
-            <li>A useful tool to learn more about React hooks!</li>
+            <li>A useful tool to learn more about React hooks</li>
           </ul>
         </div>
         <div className="about-details motivation-text">
           <h1>Why?</h1>
           <ul>
             <li>Keep up to date with the most recent React additions</li>
+            <li>Use stateful logic within functional components</li>
             <li>Avoid React "Wrapper-Hell"</li>
-            <li>Stop basing logic on lifecycle methods</li>
           </ul>
         </div>
       </div>

@@ -10,35 +10,30 @@ export default function LimitationExamples() {
       </p>
       <ul>
         <li>
-          Lifecycle methods do not always map 1 to 1 with React Hooks. Sometimes
-          it is necessary to rewrite code. Currently, the only supported
-          lifecycle methods are componentDidMount, componentDidUpdate, and
-          componentWillUnmount. Please see the lifecycle section above for more
-          information.
-        </li>
-        <li>
           Any comments in a class component file will be removed in the new
-          'hookified' file
+          'hookified' file.
         </li>
         <li>
-          The case of conditional return statements in a render method is not
-          currently supported by React-Hookify
+          React Hookify does not currently support 'get', 'set', and 'static'
+          keywords.
+        </li>
+        <li>
+          Lifecycle methods do not always map 1 to 1 with React Hooks. The
+          article below (written by a React developer) highlights many of the
+          differences. Sometimes it is necessary to rewrite code. Currently, the
+          only lifecycle methods that React Hookify supports are
+          componentDidMount, componentDidUpdate, and componentWillUnmount.
         </li>
       </ul>
-      <div id="translation_code_examples">
-        <Container maxWidth="md">
-          <h5>Input:</h5>
-          <Highlight language={'javascript'}>{}</Highlight>
-          <h5>Output:</h5>
-          <Highlight language={'javascript'}>{}</Highlight>
-        </Container>
-      </div>
       <div id="documentation_links">
         <h5 id="read-more">Read More:</h5>
         <ul id="bullets">
           <li>
-            <a href="" target="_blank">
-              Put any links here
+            <a
+              href="https://overreacted.io/a-complete-guide-to-useeffect/"
+              target="_blank"
+            >
+              A Complete Guide to useEffect
             </a>
           </li>
         </ul>
