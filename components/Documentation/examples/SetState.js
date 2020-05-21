@@ -2,6 +2,7 @@ import Highlight from 'react-highlight.js'
 import Container from '@material-ui/core/Container'
 import prettier from 'prettier-standalone'
 
+
 const input = prettier.format(
   `import React, { Component } from "react"
 
@@ -73,7 +74,7 @@ export default function SetState() {
           </li>
         </ul>
       </div>
-      <hr />
+      <hr id="useEffect-ex-idx" />
     </div>
   )
 }
