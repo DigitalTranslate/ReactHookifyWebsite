@@ -89,7 +89,7 @@ export default function Home() {
           }
           .button-row {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
           }
           .about-container {
             display: flex;

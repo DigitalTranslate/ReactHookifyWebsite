@@ -24,10 +24,10 @@ export default function About() {
       <div id="about_hooks">
         <h4>Why Use Hooks?</h4>
         <p>
-          In version 16.8, React introduced Hooks. Hooks provide a way use
+          In version 16.8, React introduced Hooks. Hooks provide a way to use
           stateful logic within a functional component. Simply put, they vastly
           reduce the need to use class components with React. Hooks address many
-          of these issues that developers have struggled when using react:
+          of issues that developers have struggled with when using react:
         </p>
         <ul>
           <li>
@@ -40,7 +40,10 @@ export default function About() {
             method. This causes classes to be harder to understand and harder to
             test
           </li>
-          <li>Classes and 'this' can be a barrier to learning react</li>
+          <li>
+            Classes and 'this' are confusing and can be a barrier to learning
+            react
+          </li>
         </ul>
         While there are no plans to remove classes from React, hooks give React
         developers new tools to build their apps. Read more about hooks{' '}
