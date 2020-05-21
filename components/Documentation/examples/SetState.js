@@ -73,7 +73,7 @@ export default function SetState() {
           </li>
         </ul>
       </div>
-      <hr />
+      <hr id="useEffect-ex-idx" />
     </div>
   )
 }
