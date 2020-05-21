@@ -19,7 +19,7 @@ export default function LimitationExamples() {
         </li>
         <li className="li-limits">
           React Hookify cannot currently translate smiley/frowney faces such as
-          :) or :( (sorry!)
+          :) or :( sorry!
         </li>
         <li className="li-limits">
           React Hookify does not support replacing the whole state with a new
