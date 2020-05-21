@@ -1,5 +1,5 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
 
 const input = `onClick={() => {
   this.setState({
@@ -40,7 +40,7 @@ export default function SetState() {
           </li>
         </ul>
       </div>
-      <hr />
+      <hr id="useEffect-ex-idx" />
     </div>
-  );
+  )
 }

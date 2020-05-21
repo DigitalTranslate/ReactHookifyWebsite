@@ -17,7 +17,9 @@ export default function Installation() {
           If file is in your current directory:
           <div className="grey">hookify app.js</div>
           Can accept multiple files at once:
-          <div className="grey">hookify app1.js app2.js</div>
+          <div id="examples-idx" className="grey">
+            hookify app1.js app2.js
+          </div>
         </Container>
       </div>
     </div>
