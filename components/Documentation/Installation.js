@@ -1,23 +1,25 @@
-import Container from '@material-ui/core/Container'
-import React from 'react'
+import Container from '@material-ui/core/Container';
+import React from 'react';
 
 export default function Installation() {
   return (
     <div id="installation">
       <h2>Installation</h2>
-      <p>
-        Install with <code>npm</code>:
-      </p>
+      <div>
+        Current Version: <b>1.0.12</b>
+      </div>
       <div id="install_example">
         <Container maxWidth="sm">
           <p>
             Install with npm: <br />
           </p>
-          <div id="usage-idx" className="grey">
-            npm install -g react-hookify
-          </div>
+          <div id="usage-idx" className="grey">npm install -g react-hookify</div>
+          <p>
+            To update to a more recent version (if previously installed): <br />
+          </p>
+          <div className="grey">npm update -g react-hookify</div>
         </Container>
       </div>
     </div>
-  )
+  );
 }

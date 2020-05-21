@@ -1,28 +1,29 @@
-## Getting Started
+# ReactHookify
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- React Hookify is a command line tool that converts React class components into functional components with Hooks! **It will not alter your current file; instead, a new 'hookified' file is created next to your original.**
+- Documentation (with testing playground): https://react-hookify.herokuapp.com/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `npm install -g react-hookify`
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+- `hookify <filepath(s) of class component>`
+- Examples:
+  - `hookify client/app.js`
+  - `hookify app.js`
+  - `hookify app1.js app2.js`
+- Look for your new 'hookified' file in the same directory as your class component file!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Limitations
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- React Hooks cannot always map 1 to 1 with lifecycle components. Less complex lifecycle components should work fine with React Hookify. In more complex cases, code my have to be rewritten
+  - Currently, the only supported lifecycle methods are componentDidMount, componentDidUpdate, and componentWillUnmount
+- React Hookify will not be able to translate instances where variable names come from other files. The package is built with parsing logic that looks for variable patterns. This may come up when replacing the whole state with `this.setState` and when using **controlled forms**.
+  - If you try to replace the whole state using `this.setState(this.props.newObject)`, React Hookify would not have access to the needed keys/values.
+  - Similarly, if you try to implement a controlled form, but the actual component form is in a different file, React Hookify again would not be able to identify the needed form names and values.
+- Any comments in the original file will be removed in the 'hookified file'
+- React Hookify does not currently support 'get', 'set', and 'static' keywords

@@ -35,17 +35,20 @@ export default function Home() {
         <div className="about-details motivation-text">
           <h1>What is React Hookify?</h1>
           <ul>
-            <li>Command Line tool to...</li>
-            <li>Built with...</li>
-            <li>A way to learn more about React hooks!</li>
+            <li>
+              Command Line tool that converts React class components into
+              functional components with Hooks
+            </li>
+            <li>A quick way to refactor old code</li>
+            <li>A useful tool to learn more about React hooks</li>
           </ul>
         </div>
         <div className="about-details motivation-text">
           <h1>Why?</h1>
           <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Consectetur adipisicing elit.</li>
-            <li>doloribus asperiores tempora.</li>
+            <li>Keep up to date with the most recent React additions</li>
+            <li>Use stateful logic within functional components</li>
+            <li>Avoid React "Wrapper-Hell"</li>
           </ul>
         </div>
       </div>

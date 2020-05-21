@@ -25,10 +25,10 @@ export default function TableOfContents() {
           </ul>
         </li>
         <li>
-          <a href="#examples-idx">How React Hookify Works</a>
+          <a href="#examples-idx">Examples</a>
           <ul>
             <li>
-              <a href="#class-to-func-idx">Class to Function</a>
+              <a href="#translation_class">Class to Function</a>
             </li>
             <li>
               <a href="#useState-ex-idx">State to useState</a>
@@ -40,6 +40,9 @@ export default function TableOfContents() {
               <a href="#useEffect-ex-idx">Lifecycle to useEffect</a>
             </li>
           </ul>
+        </li>
+        <li>
+          <a href="#translation_limitations">Limitations</a>
         </li>
       </ul>
       <style jsx>

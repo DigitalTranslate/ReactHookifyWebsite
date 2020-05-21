@@ -3,6 +3,7 @@ import About from '../components/Documentation/About.js'
 import Installation from '../components/Documentation/Installation.js'
 import Usage from '../components/Documentation/Usage.js'
 import Translations from '../components/Documentation/Translations.js'
+import Limitations from '../components/Documentation/Limitations.js'
 import Head from 'next/head'
 import Container from '@material-ui/core/Container'
 import TableOfContents from '../components/Documentation/TableOfContents'
@@ -35,6 +36,7 @@ export default function Docs() {
         <Installation />
         <Usage />
         <Translations />
+        <Limitations />
       </Container>
     </>
   )

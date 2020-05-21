@@ -23,14 +23,28 @@ export default function Playground() {
   const [outputCode, setOutputCode] = useState('')
   const [SnackOpen, setOpen] = useState(false)
   const [error, setError] = useState(
-    '// Please enter valid a react class component!'
+    '// Please enter valid a React class component!'
   )
+
+  function reactClassCompTest(string) {
+    let test1 = /(class)(.|\n)*?(extends)(.|\n)*?(Component)/.test(string)
+    let test2 = /([^a-zA-z0-9_])(render\()/.test(string)
+    if (test1 && test2) {
+      return true
+    } else {
+      return false
+    }
+  }
 
   function handleSubmit() {
     try {
-      setOutputCode(hookifyApp(inputCode))
+      if (reactClassCompTest(inputCode)) {
+        setOutputCode(hookifyApp(inputCode))
+      } else {
+        setOutputCode(error)
+      }
     } catch (err) {
-      setOutputCode(error)
+      setOutputCode(err.message)
     }
   }
 
@@ -120,7 +134,10 @@ export default function Playground() {
                   variant="contained"
                   color="default"
                   size="small"
-                  onClick={() => copy(inputCode)}
+                  onClick={() => {
+                    copy(outputCode)
+                    setOpen(true)
+                  }}
                 >
                   Copy
                 </Button>
