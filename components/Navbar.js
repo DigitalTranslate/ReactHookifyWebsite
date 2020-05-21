@@ -20,7 +20,10 @@ export default function Navbar() {
         <Link href="/docs">
           <a>Documentation</a>
         </Link>
-        <a href="https://github.com/DigitalTranslate/ReactHookify">
+        <a
+          href="https://github.com/DigitalTranslate/ReactHookify"
+          aria-label="Github"
+        >
           <GitHubIcon fontSize="large" />
         </a>
       </div>

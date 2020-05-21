@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import DescriptionIcon from '@material-ui/icons/Description'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -8,9 +9,25 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-section with-logo">
-          <img src="reacthooks.png" alt="footer image" />
-          <Link href="/docs">
-            <a>Docs</a>
+          <Link href="/">
+            <a>
+              <img src="reacthooks.png" alt="footer image" />
+            </a>
+          </Link>
+          <a href="https://www.npmjs.com/package/react-hookify">
+            <img id="npm-logo" src="npm-logo.png" alt="npm-logo" />
+          </a>
+        </div>
+        <div className="footer-section">
+          <DescriptionIcon fontSize="large" />
+          <Link href="/docs#documentation-container">
+            <a>About</a>
+          </Link>
+          <Link href="/docs#installation-idx">
+            <a>Install</a>
+          </Link>
+          <Link href="/docs#usage-idx">
+            <a>Usage</a>
           </Link>
         </div>
 
@@ -48,6 +65,7 @@ export default function Footer() {
             width: 100%;
             height: 12rem;
             z-index: 10000;
+            font-size: small;
           }
           .footer-container {
             display: flex;
@@ -70,11 +88,17 @@ export default function Footer() {
           }
           }
           footer img {
+            opacity: 0.7;
             width: 80px;
-            margin: auto;
           }
-          .with-logo {
-            align-items: center;
+          footer img:hover {
+            opacity: 1;
+          }
+          .with-logo img{
+            padding-bottom: 10px;
+          }
+          #npm-logo {
+            width: 40px;
           }
         `}
       </style>

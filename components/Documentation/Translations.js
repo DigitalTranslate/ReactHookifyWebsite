@@ -1,9 +1,9 @@
-import Highlight from 'react-highlight.js';
-import Container from '@material-ui/core/Container';
-import ClassToFunction from './examples/ClassToFunction';
-import StateToUseState from './examples/StateToUseState';
-import SetState from './examples/SetState';
-import LifeCycleToUseEffect from './examples/LifeCycleToUseEffect';
+import Highlight from 'react-highlight.js'
+import Container from '@material-ui/core/Container'
+import ClassToFunction from './examples/ClassToFunction'
+import StateToUseState from './examples/StateToUseState'
+import SetState from './examples/SetState'
+import LifeCycleToUseEffect from './examples/LifeCycleToUseEffect'
 
 export default function Translations() {
   return (

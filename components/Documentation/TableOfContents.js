@@ -6,36 +6,38 @@ export default function TableOfContents() {
     <Drawer variant="permanent" anchor="left">
       <ul id="menu">
         <li>
-          <a href="#about_main">About</a>
+          <a href="#documentation-container">About</a>
           <ul>
             <li>
-              <a href="#about_hookify">What is React Hookify?</a>
+              <a href="#about_main">What is React Hookify?</a>
             </li>
             <li>
-              <a href="#about_hooks">Why Use Hooks?</a>
+              <a href="#why-hooks">Why Use Hooks?</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#installation">Installation</a>
+          <a href="#installation-idx">Installation</a>
+          <ul>
+            <li>
+              <a href="#usage-idx">Usage</a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="#usage">Usage</a>
-        </li>
-        <li>
-          <a href="#translations">Examples</a>
+          <a href="#examples-idx">Examples</a>
           <ul>
             <li>
               <a href="#translation_class">Class to Function</a>
             </li>
             <li>
-              <a href="#translation_state">State to useState</a>
+              <a href="#useState-ex-idx">State to useState</a>
             </li>
             <li>
-              <a href="#translation_setState">setState</a>
+              <a href="#setState-ex-idx">setState</a>
             </li>
             <li>
-              <a href="#translation_lifecycle">Lifecycle to useEffect</a>
+              <a href="#useEffect-ex-idx">Lifecycle to useEffect</a>
             </li>
           </ul>
         </li>
