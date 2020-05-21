@@ -23,10 +23,10 @@ export default function LimitationExamples() {
         </li>
         <li className="li-limits">
           React Hookify does not support replacing the whole state with a new
-          object. There is not an exact hook equivalent. For example, replacing
-          the whole state using{' '}
+          object or using the whole state at once. There is not an exact hook
+          equivalent. For example, replacing the whole state using{' '}
           <span className="code-span">this.setState(newObject)</span> will not
-          be able to be translated
+          be able to be translated.
         </li>
         <li className="li-limits">
           <b>
