@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button'
 import copy from 'copy-to-clipboard'
 import { testClass, hookifyApp } from '../componentUtils'
 import FlexSnackbar from '../components/flexSnackbar'
+import Head from 'next/head'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -61,6 +62,9 @@ export default function Playground() {
   return (
     modeLoaded && (
       <>
+        <Head>
+          <title>Demo | React Hookify</title>
+        </Head>
         <div className="container-0">
           <div className="container-1">
             <div className="container-1a">

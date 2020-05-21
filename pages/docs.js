@@ -11,6 +11,16 @@ export default function Docs() {
   return (
     <>
       <Head>
+        <title>Documentation | React Hookify</title>
+        <meta name="og:title" content="Documentation | React Hookify" />
+        <meta
+          name="description"
+          content="Docs for React Hookify: About | How to Use | Installation | Limitations"
+        />
+        <meta
+          property="og:description"
+          content="Docs for React Hookify: About | How to Use | Installation | Limitations"
+        />
         <link
           rel="stylesheet"
           href="https://highlightjs.org/static/demo/styles/atom-one-dark.css"

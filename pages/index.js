@@ -1,11 +1,19 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Button from '@material-ui/core/Button'
 import Link from 'next/link'
+import Head from 'next/head'
 
 // THIS IS OUR HOMEPAGE AND IS SERVED UP AT '/'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>React Hookify | Easing your transition into React Hooks</title>
+        <meta
+          name="og:title"
+          content="React Hookify | Easing your transition into React Hooks"
+        />
+      </Head>
       <div className="home-container">
         <div className="home-buttons-container">
           <img src="reacthooks.png" alt="logo" />
