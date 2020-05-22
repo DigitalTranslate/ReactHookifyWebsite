@@ -6,6 +6,7 @@ ADD ANY CSS THAT WILL BE USED ON EVERY PAGE HERE
 
 html {
   min-height: 100vh;
+  background-color: #f9f9f9;
 }
 body {
   padding: 0;
@@ -64,10 +65,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin: 1em;
   line-height: 1.2;
 }
 
@@ -80,7 +78,6 @@ img {
 }
 
 .container-1a {
-  margin-right: 1em;
   width: 50%;
 }
 
@@ -91,12 +88,18 @@ img {
 .CodeMirror {
   /* height: 460px !important; */
   height: 81vh !important;
-  font-size: 0.9vw;
-  box-shadow: 3px 3px 1px 1px !important;
+  /* font-size: 0.9vw; */
+  font-size: 2vh;
+  border-radius: 3px;
+}
+
+.MuiButton-label.hookify {
+  color: white !important;
 }
 
 .playground-header {
   font-weight: lighter;
+  font-size: 1.23em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -179,6 +182,10 @@ img {
   margin-top: 30px;
 }
 
+.MuiDrawer-paperAnchorLeft {
+  background-color: #f5f4f4 !important;
+}
+
 /* Media Queries */
 @media (min-width: 320px) {
   .MuiDrawer-paperAnchorLeft {
@@ -200,6 +207,35 @@ img {
   .githubs {
     display: none;
   }
+  .home-container img {
+    width: 15em;
+    padding-bottom: 1em;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-details {
+    width: 80vw;
+    background-color: none;
+  }
+  .about-details h1 {
+    font-size: 7vw;
+  }
+  .code-block {
+    font-size: 3.1vw;
+  }
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-1a {
+    width: 90%;
+  }
+
+  .container-1b {
+    width: 90%;
+  }
 }
 @media (min-width: 635px) {
   nav {
@@ -207,6 +243,20 @@ img {
     justify-content: space-between;
     padding-left: 10em;
     padding-right: 10em;
+  }
+  .home-container img {
+    width: auto;
+    padding-bottom: 0em;
+  }
+  .about-details {
+    width: 25em;
+    background-color: #2e4756;
+  }
+  .about-details h1 {
+    font-size: 1.9em;
+  }
+  .code-block {
+    font-size: 14px;
   }
 }
 @media (min-width: 940px) {
@@ -226,5 +276,33 @@ img {
     display: flex;
     flex-direction: column;
     width: 25%;
+  }
+  .githubs a {
+    padding-top: 5px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  .githubs a:hover {
+    color: #324a5f;
+  }
+  .about-container {
+    flex-direction: row;
+  }
+  .container-1 {
+    flex-direction: row;
+  }
+  .container-1a {
+    margin-right: 1em;
+    width: 50%;
+  }
+
+  .container-1b {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .CodeMirror {
+    font-size: 1.7vh;
   }
 }

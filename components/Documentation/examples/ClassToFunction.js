@@ -15,7 +15,6 @@ const input = prettier.format(
     semi: false,
     parser: 'babel',
   }
-
 )
 
 const results = prettier.format(
@@ -43,7 +42,7 @@ export default function ClassToFunction() {
         <Container maxWidth="md">
           <h5>Input:</h5>
           <Highlight language={'javascript'}>{input}</Highlight>
-          <h5 id="useState-ex-idx">Output:</h5>
+          <h5>Output:</h5>
           <Highlight language={'javascript'}>{results}</Highlight>
         </Container>
       </div>
@@ -51,7 +50,11 @@ export default function ClassToFunction() {
         <h5 id="read-more">Read More:</h5>
         <ul id="bullets">
           <li>
-            <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">
+            <a
+              id="useState-ex-idx"
+              href="https://reactjs.org/docs/hooks-intro.html"
+              target="_blank"
+            >
               React Documentation On Hooks
             </a>
           </li>

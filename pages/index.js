@@ -43,7 +43,7 @@ export default function Home() {
             <li>A useful tool to learn more about React hooks</li>
           </ul>
         </div>
-        <div className="about-details motivation-text">
+        <div className="about-details motivation-text about-why">
           <h1>Why?</h1>
           <ul>
             <li>Keep up to date with the most recent React additions</li>
@@ -68,7 +68,7 @@ export default function Home() {
           <h1>Usage</h1>
           <span>
             Use the 'hookify' command to create a functional component
-            equivalent.
+            equivalent in a newly created file.
           </span>
           <div className="code-block">
             $ hookify {'<filepath of class component>'}
@@ -97,7 +97,7 @@ export default function Home() {
           }
           .button-row {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
           }
           .about-container {
             display: flex;
@@ -112,8 +112,6 @@ export default function Home() {
           .about-details {
             display: flex;
             flex-direction: column;
-            background-color: #2e4756;
-            width: 25em;
             margin: 0.5em;
             margin-top: 2em;
             margin-bottom: 2em;
@@ -123,6 +121,7 @@ export default function Home() {
             font-family: 'Apple SD Gothic Neo', AppleSDGothicNeo, -apple-system,
               BlinkMacSystemFont, Helvetica, Arial, sans-serif;
             font-weight: lighter;
+            white-space: nowrap;
           }
           .motivation {
             background-color: #324a5f;
@@ -144,7 +143,6 @@ export default function Home() {
           }
           .code-block {
             font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-            font-size: 14px;
             padding: 13px;
             overflow: auto;
             direction: ltr;

@@ -43,7 +43,7 @@ export default function Footer() {
             Anderson Chan
           </a>
         </div>
-        <div className="githubs footer-section ">
+        <div className="githubs ">
           <GitHubIcon fontSize="large" />
           <a href="https://github.com/BaileyMcKelway">
             https://github.com/BaileyMcKelway
@@ -77,6 +77,7 @@ export default function Footer() {
             display: flex;
             flex-direction: column;
             width: 25%;
+            white-space: nowrap;
           }
           .footer-section a {
             padding-top: 5px;

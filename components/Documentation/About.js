@@ -7,7 +7,7 @@ export default function About() {
       <h2>About</h2>
       <div id="about_hookify">
         <h4>What is React Hookify?</h4>
-        <p id="why-hooks">
+        <p>
           React Hookify is a command line tool that converts React class
           components into functional components <em>with Hooks</em>!{' '}
           <b>It will not alter your current code</b>; instead a new 'hookified'
@@ -15,7 +15,7 @@ export default function About() {
           outdated code, or to help learn how Hooks work. Feel free to try it
           out with our{' '}
           <Link href="/playground">
-            <a>Demo</a>
+            <a id="why-hooks">Demo</a>
           </Link>
           !
         </p>
@@ -24,10 +24,10 @@ export default function About() {
       <div id="about_hooks">
         <h4>Why Use Hooks?</h4>
         <p>
-          In version 16.8, React introduced Hooks. Hooks provide a way use
+          In version 16.8, React introduced Hooks. Hooks provide a way to use
           stateful logic within a functional component. Simply put, they vastly
           reduce the need to use class components with React. Hooks address many
-          of these issues that developers have struggled when using react:
+          of issues that developers have struggled with when using react:
         </p>
         <ul>
           <li>
@@ -40,7 +40,10 @@ export default function About() {
             method. This causes classes to be harder to understand and harder to
             test
           </li>
-          <li>Classes and 'this' can be a barrier to learning react</li>
+          <li>
+            Classes and 'this' are confusing and can be a barrier to learning
+            react
+          </li>
         </ul>
         While there are no plans to remove classes from React, hooks give React
         developers new tools to build their apps. Read more about hooks{' '}

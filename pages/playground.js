@@ -117,12 +117,13 @@ export default function Playground() {
                   </Button>
                 </div>
                 <Button
+                  classes={{ label: 'hookify' }}
                   variant="contained"
                   color="primary"
                   size="small"
                   onClick={handleSubmit}
                 >
-                  Submit
+                  Hookify
                 </Button>
               </div>
             </div>
