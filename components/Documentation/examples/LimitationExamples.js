@@ -18,8 +18,9 @@ export default function LimitationExamples() {
           keywords.
         </li>
         <li className="li-limits">
-          React Hookify cannot currently translate smiley/frowney faces such as
-          :) or :( sorry!
+          RReact Hookify cannot currently translate any JSX with unclosed
+          parentheses. So no smiley/frowney faces{' '}
+          <span className="code-span">:) or :(</span> sorry!
         </li>
         <li className="li-limits">
           React Hookify does not support replacing the whole state with a new
