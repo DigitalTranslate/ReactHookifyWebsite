@@ -1,17 +1,50 @@
 import Highlight from 'react-highlight.js'
 import Container from '@material-ui/core/Container'
+import prettier from 'prettier-standalone'
 
-const input = `onClick={() => {
-  this.setState({
-    firstName: 'Tom',
-    lastName: 'Hanks',
-  })
-}}`;
+const input = prettier.format(
+  `import React, { Component } from "react"
 
-const results = `onClick={() => {
-  setFirstName("Tom")
+class App extends Component {
+  constructor() {
+    this.state = {
+      firstName: "Bob",
+      lastName: "Smith"
+    }
+  }
+
+  render() {
+    return <button onClick={() =>
+      this.setState = {
+      firstName: "Bob",
+      lastName: "Smith"
+    }}>
+    Click Here!</button>
+  }
+}`,
+  {
+    semi: false,
+    parser: 'babel',
+  }
+)
+
+const results = prettier.format(
+  `import React from "react"
+
+function App() {
+  const [firstName, setFirstName] = useState("Bob")
+  const [lastName, setLastName] = useState("Smith")
+
+  return <button onClick={() => {
+    setFirstName("Tom")
   setLastName("Hanks")
-}}`;
+  }}>Click Here!</button>
+}`,
+  {
+    semi: false,
+    parser: 'babel',
+  }
+)
 
 export default function SetState() {
   return (

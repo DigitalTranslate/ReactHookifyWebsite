@@ -1,12 +1,12 @@
-import Container from '@material-ui/core/Container';
-import React from 'react';
+import Container from '@material-ui/core/Container'
+import React from 'react'
 
 export default function Installation() {
   return (
     <div id="installation">
       <h2>Installation</h2>
       <div>
-        Current Version: <b>1.0.12</b>
+        Current Version: <b>1.0.13</b>
       </div>
       <div id="install_example">
         <Container maxWidth="sm">
@@ -21,5 +21,5 @@ export default function Installation() {
         </Container>
       </div>
     </div>
-  );
+  )
 }

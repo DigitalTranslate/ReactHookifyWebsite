@@ -13,8 +13,9 @@ const input = prettier.format(
         lastName: "Smith"
       }
     }
+
     render() {
-      return <div>Hello</div>;
+      return <div>Hello {this.state.firstName} {this.state.lastName}</div>;
     }
     }`,
   {
@@ -30,7 +31,8 @@ const results = prettier.format(
     function App() {
       const [firstName, setFirstName] = useState("Bob")
 const [lastName, setLastName] = useState("Smith")
-  return <div>Hello</div>
+
+  return <div>Hello {firstName} {lastName}</div>
 }`,
   {
     semi: false,

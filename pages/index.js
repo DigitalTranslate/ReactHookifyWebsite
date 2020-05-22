@@ -68,7 +68,7 @@ export default function Home() {
           <h1>Usage</h1>
           <span>
             Use the 'hookify' command to create a functional component
-            equivalent.
+            equivalent in a newly created file.
           </span>
           <div className="code-block">
             $ hookify {'<filepath of class component>'}
@@ -97,7 +97,7 @@ export default function Home() {
           }
           .button-row {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
           }
           .about-container {
             display: flex;

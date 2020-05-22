@@ -122,7 +122,7 @@ export default function Playground() {
                   size="small"
                   onClick={handleSubmit}
                 >
-                  Submit
+                  Hookify
                 </Button>
               </div>
             </div>
