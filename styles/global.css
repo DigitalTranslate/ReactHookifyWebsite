@@ -59,33 +59,6 @@ img {
   padding-top: 1.2em;
 }
 
-@media (min-width: 320px) {
-  .MuiDrawer-paperAnchorLeft {
-    display: none !important;
-  }
-  #logo-title {
-    display: none;
-  }
-  #documentation-container {
-    margin-left: auto;
-    align-self: center;
-  }
-}
-@media (min-width: 940px) {
-  .MuiDrawer-paperAnchorLeft {
-    display: flex !important;
-  }
-  #logo-title {
-    display: flex;
-  }
-  #documentation-container {
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin-left: 19.3em;
-  }
-}
-
 /* playground */
 .container-0 {
   display: flex;
@@ -117,8 +90,9 @@ img {
 
 .CodeMirror {
   /* height: 460px !important; */
-  height: 70vh !important;
+  height: 81vh !important;
   font-size: 0.9vw;
+  box-shadow: 3px 3px 1px 1px !important;
 }
 
 .playground-header {
@@ -203,4 +177,54 @@ img {
 
 #usage_example {
   margin-top: 30px;
+}
+
+/* Media Queries */
+@media (min-width: 320px) {
+  .MuiDrawer-paperAnchorLeft {
+    display: none !important;
+  }
+  #logo-title {
+    display: none;
+  }
+  #documentation-container {
+    margin-left: auto;
+    align-self: center;
+  }
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .githubs {
+    display: none;
+  }
+}
+@media (min-width: 635px) {
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
+@media (min-width: 940px) {
+  .MuiDrawer-paperAnchorLeft {
+    display: flex !important;
+  }
+  #logo-title {
+    display: flex;
+  }
+  #documentation-container {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 19.3em;
+  }
+  .githubs {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
 }
