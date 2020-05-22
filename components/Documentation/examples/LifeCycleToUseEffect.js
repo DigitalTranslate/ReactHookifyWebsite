@@ -140,6 +140,7 @@ export default function LifeCycleToUseEffect() {
         <ul id="bullets">
           <li>
             <a
+              id="limitations-idx"
               href="https://reactjs.org/docs/hooks-effect.html"
               target="_blank"
             >

@@ -6,7 +6,7 @@ export default function TableOfContents() {
     <Drawer variant="permanent" anchor="left">
       <ul id="menu">
         <li>
-          <a href="#documentation-container">About</a>
+          <a href="#doc_title">About</a>
           <ul>
             <li>
               <a href="#about_main">What is React Hookify?</a>
@@ -28,7 +28,7 @@ export default function TableOfContents() {
           <a href="#examples-idx">Examples</a>
           <ul>
             <li>
-              <a href="#translation_class">Class to Function</a>
+              <a href="#translations">Class to Function</a>
             </li>
             <li>
               <a href="#useState-ex-idx">State to useState</a>
@@ -42,14 +42,15 @@ export default function TableOfContents() {
           </ul>
         </li>
         <li>
-          <a href="#translation_limitations">Limitations</a>
+          <a href="#limitations-idx">Limitations</a>
         </li>
       </ul>
       <style jsx>
         {`
           #menu {
-            width: 18em;
-            padding-top: 60px;
+            width: 16.8em;
+            padding-top: 3em;
+            font-weight: 200;
           }
           #menu a {
             color: black;
@@ -60,7 +61,7 @@ export default function TableOfContents() {
           }
           #menu li,
           #menu ul {
-            margin-top: 1em;
+            margin-top: 0.7em;
           }
         `}
       </style>

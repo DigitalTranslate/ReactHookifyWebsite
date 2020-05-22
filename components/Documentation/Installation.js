@@ -13,11 +13,13 @@ export default function Installation() {
           <p>
             Install with npm: <br />
           </p>
-          <div id="usage-idx" className="grey">npm install -g react-hookify</div>
+          <div className="grey">npm install -g react-hookify</div>
           <p>
             To update to a more recent version (if previously installed): <br />
           </p>
-          <div className="grey">npm update -g react-hookify</div>
+          <div id="usage-idx" className="grey">
+            npm update -g react-hookify
+          </div>
         </Container>
       </div>
     </div>

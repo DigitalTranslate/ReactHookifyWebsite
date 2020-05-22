@@ -43,7 +43,7 @@ export default function Footer() {
             Anderson Chan
           </a>
         </div>
-        <div className="footer-section">
+        <div className="githubs ">
           <GitHubIcon fontSize="large" />
           <a href="https://github.com/BaileyMcKelway">
             https://github.com/BaileyMcKelway
@@ -77,6 +77,7 @@ export default function Footer() {
             display: flex;
             flex-direction: column;
             width: 25%;
+            white-space: nowrap;
           }
           .footer-section a {
             padding-top: 5px;
@@ -84,17 +85,18 @@ export default function Footer() {
             transition: color 0.3s ease;
           }
           .footer-section a:hover {
-            color: #324A5F;
+            color: #324a5f;
           }
-          }
+
           footer img {
             opacity: 0.7;
             width: 80px;
+            transition: opacity 0.3s ease;
           }
           footer img:hover {
             opacity: 1;
           }
-          .with-logo img{
+          .with-logo img {
             padding-bottom: 10px;
           }
           #npm-logo {

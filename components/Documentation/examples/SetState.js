@@ -67,13 +67,17 @@ export default function SetState() {
         <h5 id="read-more">Read More:</h5>
         <ul id="bullets">
           <li>
-            <a href="https://reactjs.org/docs/hooks-state.html" target="_blank">
+            <a
+              id="useEffect-ex-idx"
+              href="https://reactjs.org/docs/hooks-state.html"
+              target="_blank"
+            >
               React Documentation On State Hooks
             </a>
           </li>
         </ul>
       </div>
-      <hr id="useEffect-ex-idx" />
+      <hr />
     </div>
   )
 }

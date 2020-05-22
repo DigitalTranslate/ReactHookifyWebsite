@@ -38,10 +38,7 @@ export default function Navbar() {
             flex-direction: row;
             background-color: #080808;
             height: 50px;
-            align-items: center;
-            justify-content: space-between;
-            padding-left: 10em;
-            padding-right: 10em;
+
           }
           .nav-right {
             display: flex;

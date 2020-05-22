@@ -117,6 +117,7 @@ export default function Playground() {
                   </Button>
                 </div>
                 <Button
+                  classes={{ label: 'hookify' }}
                   variant="contained"
                   color="primary"
                   size="small"
