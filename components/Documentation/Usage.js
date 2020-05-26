@@ -20,6 +20,11 @@ export default function Installation() {
           <div id="examples-idx" className="grey">
             hookify app1.js app2.js
           </div>
+          Use the -r option to replace the current file instead of making a
+          copy:
+          <div id="examples-idx" className="grey">
+            hookify -r app1.js
+          </div>
         </Container>
       </div>
     </div>
