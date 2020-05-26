@@ -6,7 +6,7 @@ export default function Installation() {
     <div id="installation">
       <h2>Installation</h2>
       <div>
-        Current Version: <b>1.0.13</b>
+        Current Version: <b>1.0.15</b>
       </div>
       <div id="install_example">
         <Container maxWidth="sm">
